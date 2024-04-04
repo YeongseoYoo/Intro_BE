@@ -26,6 +26,10 @@ class Person {
     public String getName() {
         return name;
     }
+
+    void turnOn() {
+
+    }
 }
 
 class Phone {
@@ -37,6 +41,10 @@ class Phone {
 
     void buyPhone(String brand) {
         System.out.println(owner.getName() + "가 " + brand + "핸드폰을 샀습니다.");
+    }
+
+    void getSound() {
+        System.out.println("bbeep");
     }
 }
 
@@ -60,6 +68,7 @@ class ApplePhone extends Phone {
         super(owner);
         buyPhone("애플");
     }
+
 
     void turnOn() {
         System.out.println("turn on");
